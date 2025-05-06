@@ -7,7 +7,7 @@ define('PASSWORD', '');
 define('BD', 'proyectotesis');
 
 define('APP_NAME','SISTEMA PARA DPTO PASANTES Y TESISTAS');
-define('APP_URL', 'http://localhost/proyectotesis');
+define('APP_URL', 'http://localhost/proyectotesis/');
 define('KEY_API_MAPS', '');
 
 #inicializar la base de datos
