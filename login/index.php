@@ -16,6 +16,8 @@ include('../app/config.php');
   <link rel="stylesheet" href="<?=APP_URL;?>/public/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?=APP_URL;?>/public/dist/css/adminlte.min.css">
+  <!-- Sweetalert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
@@ -54,6 +56,24 @@ include('../app/config.php');
         </div>
       </form>
 
+      <?php 
+      session_start();
+      if (isset($_SESSION['mensaje'])){
+        $mensaje = $_SESSION['mensaje'];
+        ?>
+        <script>
+          Swal.fire({
+            position: "top-end",
+            icon: "error",
+            title: "<?=$mensaje;?>",
+            showConfirmButton: false,
+            timer: 3000
+            });
+        </script>
+        <?php
+        session_destroy();
+      }
+      ?>
     </div>
   </div>
 </div>
