@@ -27,6 +27,7 @@ if ($usuario && $password === $usuario['password']) {
     session_start();
     $_SESSION['mensaje'] = "Bienvenido al sistema";
     $_SESSION['icono'] = "success";
+    $_SESSION['sesion email'] = $email;
     header('Location:'.APP_URL.'/admin');
 } else {
     echo "los datos son in correctos";

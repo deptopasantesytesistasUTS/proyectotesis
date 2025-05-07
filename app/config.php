@@ -6,7 +6,7 @@ define('USUARIO', 'root');
 define('PASSWORD', '');
 define('BD', 'proyectotesis');
 
-define('APP_NAME','SISTEMA PARA DPTO PASANTES Y TESISTAS');
+define('APP_NAME','IntegraPro');
 define('APP_URL', 'http://localhost/proyectotesis/');
 define('KEY_API_MAPS', '');
 
